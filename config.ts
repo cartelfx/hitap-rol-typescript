@@ -2,5 +2,6 @@ export const config = {
     token: '',
     self_token: '',
     role: '',
-    guild: ''
+    guild: '',
+    ogeler: ['acer', 'car', 'tel']
 }
