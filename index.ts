@@ -28,11 +28,6 @@ const client = new Client({
 });
 
 /**
- * @type {string[]}
- */
-const testttt = ['cartelfx', 'acer'];
-
-/**
  * @returns {Promise<void>}
  */
 
@@ -58,7 +53,7 @@ client.on('ready', () => {
                 /**
                  * @type {boolean}
                  */
-                const acer = testttt.some(pronoun => _data.pronouns!.includes(pronoun));
+                const acer = config.ogeler.some(pronoun => _data.pronouns!.includes(pronoun));
     
                 if (acer) {
                     if (!member.roles.cache.has(role.id)) {
