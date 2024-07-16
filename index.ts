@@ -48,7 +48,7 @@ client.on('ready', () => {
                 let acerim = await _selfb._user(member.id)
                 const _data = await acerim?.getProfile();
     
-                if (!_data || !_data.pronouns) return;
+                if (!_data || !_data.pronouns) continue;
     
                 /**
                  * @type {boolean}
